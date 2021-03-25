@@ -3,33 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokeDex</title>
+    <title>pokeDex</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <div class="topSection">            
-              <img id=graphic src="./assets/pokemonGraphic.png">             
-    </div>      
-        <!-- <div class="topLeft">
+        <img id=graphic src="./assets/pokemonGraphic.png">              
+        <div class="topLeft">
             
             <img id="logo" src="https://external-preview.redd.it/tQged7mKJ3cUpNMq5IMeceZvyKP3cTyHqhNmKEQ0Vv8.png?auto=webp&s=fb5fd61cae0bc9cde2bc2a006b1e2aeb0c935ce9">
             
-            <h2>Search Pokémon | Find Attributes</h2>
-            
-            
             <div class="form">
+                <h1>Search</h1>
+                <h2>Search Pokémon | Find Attributes</h2>
                 <form id="search">
                     <p>
-                        <label for="search">Name </label>
-                        <input type="text" id="name" class="search" required>
+                        <input placeholder="NAME" type="text" id="name" class="search">
                     </p>
                     <p>
-                        <label for="search">Color </label>
-                        <input type="text" id="color" class="search">
+                        <input placeholder="Number (1- 150)" type="integer" id="number" class="search">
                     </p>
                     <p>
-                        <label for="search">Ability</label>
-                        <input type="text" id="ability" class="search">
+                        <input placeholder="Type" type="text" id="type" class="search">
                     </p>
                     <p>
                         <button class="submit">Search</button>
@@ -38,12 +33,23 @@
 
             </div>
         </div>
-      </div> -->
-      <div class="resultsRibbon">Results
+    </div>   
+
       </div>
+        <div class="resultsRibbon">All Characters
+      </div>
+
       <div class="resultsPage">
-          <div class="resultsHeader"></div>
-    <div id="poke_container" class="poke-container"></div>
+        <div class="resultsHeader"></div>
+        <div id="poke_container" class="poke-container"></div>
+        <!-- <nav>
+            <button class="load">Load More</button>
+        </nav> -->
+    </div>
+
+    <footer>
+        <div class="copyright">Copyright 2021 | Rachel Christopher</div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

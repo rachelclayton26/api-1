@@ -1,5 +1,5 @@
 const poke_container = document.getElementById('poke_container');
-const pokemons_number = 150;
+const pokemons_number = 59;
 const colors = {
 	fire: '#f7931d',
 	grass: '#47b976',
@@ -16,6 +16,7 @@ const colors = {
 	fighting: '#E6E0D4',
 	normal: '#F5F5F5'
 };
+
 const main_types = Object.keys(colors);
 
 const fetchPokemons = async () => {
@@ -43,19 +44,22 @@ function createPokemonCard(pokemon) {
 	pokemonEl.style.backgroundColor = color;
 
 	const pokeInnerHTML = `
-		<div class="info1">
-			<h3 class="name">${name}</h3>
-			<span class="number">#${pokemon.id
+		<div class="title">
+			<div class="name">${name}</div>
+			<div class="number">#${pokemon.id
 									.toString()
-									.padStart(3, '0')}</span>
-        </div>
-        <div class="img-container">
-            <img src="https://pokeres.bastionbot.org/images/pokemon/${
+									.padStart(3, '0')}</div>
+		</div>
+		
+		<div class="img-container">
+			<img src="https://pokeres.bastionbot.org/images/pokemon/${
 							pokemon.id
 						}.png" alt="${name}" />
-        </div>
-            <small class="type">Type: <span>${type}</span></small>
-        </div>
+		</div>
+		
+		<div class="info"> 
+			<small class="type">Type: <span>${type}</span></small>
+		</div>	
     `;
 
 	pokemonEl.innerHTML = pokeInnerHTML;
@@ -65,16 +69,36 @@ function createPokemonCard(pokemon) {
 
 fetchPokemons();
 
+/* WORKING PROGRESS FOR PORTFOLIO */ 
 
-// SOCIAL PANEL JS
-const floating_btn = document.querySelector('.floating-btn');
-const close_btn = document.querySelector('.close-btn');
-const social_panel_container = document.querySelector('.social-panel-container');
+// const nameSearch = document.querySelector('#name');
+// const numberSearch = document.querySelector('#number');
+// const typeSearch = document.querySelector('#type');
+// console.log(nameSearch);
 
-floating_btn.addEventListener('click', () => {
-	social_panel_container.classList.toggle('visible')
-});
 
-close_btn.addEventListener('click', () => {
-	social_panel_container.classList.remove('visible')
-});
+// const returnNamePoke = async () => {
+// 	const url2 = `https://pokeapi.co/api/v2/pokemon/${name}`;
+// 	const res2 = await fetch(url2);
+// 	const pokemon = await res2.json();
+// 	createPokemonCard(pokemon);
+// };
+
+// const returnNumberPoke (id1){
+// 	const url3 = `https://pokeapi.co/api/v2/pokemon/${id1}`;
+// 	const res3 = await fetch(url3);
+// 	const pokemon = await res3.json();
+// 	createPokemonCard(pokemon);
+// };
+
+// const returnTypePoke (type){
+// 	const url4 = `https://pokeapi.co/api/v2/pokemon/${type}`;
+// 	const res4 = await fetch(url4);
+// 	const pokemon = await res4.json();
+// 	createPokemonCard(pokemon);
+// };
+
+// nameSearch.addEventListener('submit', returnNamePoke);
+// numberSearch.addEventListener('submit', returnNumberPoke);
+// typeSearch.addEventListener('submit', returnTypePoke);
+
