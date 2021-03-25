@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet');
 
-/* my work */
+
 body{
     padding:0pt;
     /* background: linear-gradient(90deg,#1a93d1 ,#5bc6ed, #a0dcf0); */
@@ -37,7 +37,6 @@ body{
     margin-left: 40pt;
     margin-right:40pt;
 	margin-bottom: 100px;
-
 }
 
 #logo{
@@ -63,8 +62,7 @@ h2{
     text-transform: uppercase;
     font-size: 1.2vw;
     color:black;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
 
 .form {
@@ -88,6 +86,7 @@ h2{
     text-transform: uppercase;
     position: center;
 }	
+
 .submit:hover {
     background-color: #296f5f; 
     border: .2em solid #296f5f;
@@ -102,8 +101,7 @@ input{
     text-transform: uppercase;
     font-size: 8pt;
     font-weight: 500;
-    text-align: center;
-    
+    text-align: center;  
 }	
 
 .resultsRibbon{
@@ -150,7 +148,6 @@ input{
 	max-width: 90%;
 }
 
-
 .title {
 	width: 145px;
 	display: flex;
@@ -161,7 +158,6 @@ input{
 	margin-bottom: 8%;
 	background-color: #ffe058;
 	border-radius: 3pt; 
-
 }
 
 .name {
@@ -207,7 +203,7 @@ nav{
     text-align: center;
 }	
 
-.load{
+/* .load{
     margin-top: 20pt;
     margin-bottom: 40pt;
     width: 10%;
@@ -220,10 +216,11 @@ nav{
     font-weight: 550;
     text-transform: uppercase;
 }	
+
 .load:hover{
     background-color: #156854; 
     border: .2em solid #156854;
-}	
+}	 */
 
 footer{
     position: relative;
@@ -231,6 +228,7 @@ footer{
     height: 10vw;
     background-color: black;
 }	
+
 .copyright{
     font-family:arial;
     font-size: 12px;
