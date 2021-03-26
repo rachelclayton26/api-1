@@ -104,12 +104,15 @@ input{
     text-align: center;  
 }	
 
+.ribbon{
+    width: 100%;
+    height: 7vw;
+    background-color: #f8cf19;
+}
+
 .resultsRibbon{
-	width: 100%;
-	height: 5vw;
 	font-family: 'Bangers';
     color: #314987;
-    background-color: #f8cf19;
     text-align: center;
     line-height: 5vw;
     text-transform: uppercase;
@@ -117,6 +120,25 @@ input{
 	letter-spacing: 3pt;
     font-weight: 700;
 }	
+
+.arrow{
+    text-align: center;
+    font-size: 15pt;
+    margin-top: -8pt;
+    color: #314987;
+}
+
+
+.resultsRibbon:hover {
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: 20;
+  }
+  
+@keyframes example {
+    from {margin-top: -5pt;}
+    to {margin-top: 5pt;}
+}
 
 * {
 	box-sizing: border-box;
