@@ -1,5 +1,5 @@
 const poke_container = document.getElementById('poke_container');
-const pokemons_number = 59;
+const pokemons_number = 60;
 const colors = {
 	fire: '#f7931d',
 	grass: '#47b976',
@@ -37,7 +37,14 @@ function createPokemonCard(pokemon) {
 	pokemonEl.classList.add('pokemon');
 
 	const poke_types = pokemon.types.map(type => type.type.name);
+	// console.log(pokemon.types.map(type => type.type.name));
 	const type = main_types.find(type => poke_types.indexOf(type) > -1);
+
+	const ability = pokemon.abilities.map(ability => ability.ability.name);
+
+	console.log(pokemon.abilities.map(ability => ability.ability.name));
+
+	
 	const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
 	const color = colors[type];
 	
@@ -58,7 +65,8 @@ function createPokemonCard(pokemon) {
 		</div>
 		
 		<div class="info"> 
-			<small class="type">Type: <span>${type}</span></small>
+			<div class="type">Type: ${type}</div>
+			<div class="ability">Ability: ${ability}</div>
 		</div>	
     `;
 
@@ -70,6 +78,15 @@ function createPokemonCard(pokemon) {
 fetchPokemons();
 
 /* WORKING PROGRESS FOR PORTFOLIO */ 
+
+// const load = document.getElementsByClassName("load");
+// load.addEventListener('click', event => {
+// 	let num= (id.value +=20);
+// 	const url2 = `https://pokeapi.co/api/v2/pokemon/?offset=${num}`;
+// 	const res =  fetch(url2);
+// 	const pokemon =  res.json();
+// 	createPokemonCard(pokemon);
+// })
 
 // document.getElementById("name").addEventListener('submit', event =>{
 // 	if (event.target.value == "") {

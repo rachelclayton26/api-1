@@ -151,22 +151,22 @@ input{
 	border: 8pt solid #ffe058;
 	box-shadow: 0 3px 15px rgba(100, 100, 100, 0.7);
 	margin: 10px;
-	padding: 10px;
+	padding: 6px;
 	text-align: center;
 	width: 140pt;
-	height: 210pt;
+	height: 215pt;
 }
 
 .pokemon .img-container {
 	background-color: rgba(255, 255, 255, 0.6);
 	border-radius: 5%;
 	width: 145px;
-	height: 160px;
+	height: 155px;
 	text-align: center;
 }
 
 .pokemon .img-container img {
-	margin-top: 20px;
+	margin-top: 15px;
 	max-width: 90%;
 }
 
@@ -177,7 +177,7 @@ input{
 	align-items: center;
 	height: 20pt;
 	text-transform: uppercase;
-	margin-bottom: 8%;
+	margin-bottom: 5%;
 	background-color: #ffe058;
 	border-radius: 3pt; 
 }
@@ -198,13 +198,14 @@ input{
 
 .info{
     background-color:rgba(255, 255, 255, 0.3);
+    padding: 4pt;
     border-radius: 3pt;
 	text-align: center;
 	text-transform: uppercase;
-    font-size: 10pt;
+    font-size: 7pt;
     font-weight: bold;
     letter-spacing: .75pt;
-	margin-top: 10px;
+	margin-top: 8px;
 }
 
 .resultsPage{
