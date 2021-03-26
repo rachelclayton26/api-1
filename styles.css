@@ -157,6 +157,10 @@ input{
 	height: 215pt;
 }
 
+.cardWrapper{
+    margin-left: 3.5pt;
+}
+
 .pokemon .img-container {
 	background-color: rgba(255, 255, 255, 0.6);
 	border-radius: 5%;
@@ -198,6 +202,7 @@ input{
 
 .info{
     background-color:rgba(255, 255, 255, 0.3);
+    width: 145px;
     padding: 4pt;
     border-radius: 3pt;
 	text-align: center;
@@ -206,6 +211,13 @@ input{
     font-weight: bold;
     letter-spacing: .75pt;
 	margin-top: 8px;
+}
+
+.type {
+    margin-left: -3pt;
+}
+.ability{
+    margin-left: -3pt;
 }
 
 .resultsPage{

@@ -51,23 +51,25 @@ function createPokemonCard(pokemon) {
 	pokemonEl.style.backgroundColor = color;
 
 	const pokeInnerHTML = `
-		<div class="title">
-			<div class="name">${name}</div>
-			<div class="number">#${pokemon.id
-									.toString()
-									.padStart(3, '0')}</div>
+		<div class="cardWrapper">
+			<div class="title">
+				<div class="name">${name}</div>
+				<div class="number">#${pokemon.id
+										.toString()
+										.padStart(3, '0')}</div>
+			</div>
+			
+			<div class="img-container">
+				<img src="https://pokeres.bastionbot.org/images/pokemon/${
+								pokemon.id
+							}.png" alt="${name}" />
+			</div>
+			
+			<div class="info"> 
+				<div class="type">Type: ${type}</div>
+				<div class="ability">Ability: ${ability}</div>
+			</div>	
 		</div>
-		
-		<div class="img-container">
-			<img src="https://pokeres.bastionbot.org/images/pokemon/${
-							pokemon.id
-						}.png" alt="${name}" />
-		</div>
-		
-		<div class="info"> 
-			<div class="type">Type: ${type}</div>
-			<div class="ability">Ability: ${ability}</div>
-		</div>	
     `;
 
 	pokemonEl.innerHTML = pokeInnerHTML;
